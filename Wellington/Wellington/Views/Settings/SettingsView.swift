@@ -4,6 +4,10 @@ struct SettingsView: View {
     @Environment(HealthKitService.self) private var healthKitService
 
     @AppStorage(AppConstants.UserDefaultsKeys.autoSaveToiCloud) private var autoSaveToiCloud = false
+    @State private var showFolderPicker = false
+    @State private var savedFolderName: String?
+
+    private let fileStorageService = FileStorageService()
 
     private var appVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
@@ -15,23 +19,59 @@ struct SettingsView: View {
 
     var body: some View {
         Form {
-            iCloudSection
+            exportFolderSection
             tipJarSection
             healthKitSection
             aboutSection
         }
         .navigationTitle("settings_title" as LocalizedStringKey)
+        .sheet(isPresented: $showFolderPicker) {
+            FolderPickerView { url in
+                try? fileStorageService.saveExportFolderBookmark(for: url)
+                savedFolderName = fileStorageService.savedFolderName
+            }
+        }
+        .onAppear {
+            savedFolderName = fileStorageService.savedFolderName
+        }
     }
 
-    // MARK: - iCloud Section
+    // MARK: - Export Folder Section
 
-    private var iCloudSection: some View {
+    private var exportFolderSection: some View {
         Section {
+            Button {
+                showFolderPicker = true
+            } label: {
+                HStack {
+                    Label("settings_choose_folder" as LocalizedStringKey, systemImage: "folder")
+                    Spacer()
+                    if let savedFolderName {
+                        Text(savedFolderName)
+                            .foregroundStyle(.secondary)
+                            .lineLimit(1)
+                    } else {
+                        Text("settings_no_folder" as LocalizedStringKey)
+                            .foregroundStyle(.tertiary)
+                    }
+                }
+            }
+            .tint(.primary)
+
+            if savedFolderName != nil {
+                Button(role: .destructive) {
+                    fileStorageService.clearExportFolderBookmark()
+                    savedFolderName = nil
+                } label: {
+                    Label("settings_clear_folder" as LocalizedStringKey, systemImage: "folder.badge.minus")
+                }
+            }
+
             Toggle("settings_auto_save_icloud" as LocalizedStringKey, isOn: $autoSaveToiCloud)
         } header: {
-            Text("settings_section_icloud" as LocalizedStringKey)
+            Text("settings_section_export" as LocalizedStringKey)
         } footer: {
-            Text("settings_icloud_footer" as LocalizedStringKey)
+            Text("settings_export_footer" as LocalizedStringKey)
         }
     }
 

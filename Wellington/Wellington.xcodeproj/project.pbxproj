@@ -31,6 +31,7 @@
 		A100000022 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000022 /* TipJarView.swift */; };
 		A100000023 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000023 /* ShareSheetView.swift */; };
 		A100000024 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000024 /* OnboardingView.swift */; };
+		A100000030 /* FolderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000030 /* FolderPickerView.swift */; };
 		A100000025 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000025 /* Date+Formatting.swift */; };
 		A100000026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B100000026 /* Assets.xcassets */; };
 		A100000027 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B100000027 /* Products.storekit */; };
@@ -63,6 +64,7 @@
 		B100000022 /* TipJarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarView.swift; sourceTree = "<group>"; };
 		B100000023 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
 		B100000024 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B100000030 /* FolderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPickerView.swift; sourceTree = "<group>"; };
 		B100000025 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
 		B100000026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B100000027 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				B100000023 /* ShareSheetView.swift */,
 				B100000024 /* OnboardingView.swift */,
+				B100000030 /* FolderPickerView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				A100000022 /* TipJarView.swift in Sources */,
 				A100000023 /* ShareSheetView.swift in Sources */,
 				A100000024 /* OnboardingView.swift in Sources */,
+				A100000030 /* FolderPickerView.swift in Sources */,
 				A100000025 /* Date+Formatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

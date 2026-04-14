@@ -6,6 +6,7 @@ struct ExportProgressView: View {
 
     @AppStorage(AppConstants.UserDefaultsKeys.autoSaveToiCloud) private var autoSaveToiCloud = false
     @State private var showShareSheet = false
+    @State private var showFolderPicker = false
     @State private var iCloudSaveMessage: String?
 
     private let fileStorageService = FileStorageService()
@@ -43,6 +44,12 @@ struct ExportProgressView: View {
             .sheet(isPresented: $showShareSheet) {
                 if let url = exportResult?.fileURL {
                     ShareSheetView(items: [url])
+                }
+            }
+            .sheet(isPresented: $showFolderPicker) {
+                FolderPickerView { url in
+                    try? fileStorageService.saveExportFolderBookmark(for: url)
+                    saveToChosenFolder()
                 }
             }
             .alert("iCloud", isPresented: .init(
@@ -120,10 +127,19 @@ struct ExportProgressView: View {
 
                 if !autoSaveToiCloud {
                     Button {
-                        saveToiCloud()
+                        if fileStorageService.resolveExportFolderBookmark() != nil {
+                            saveToChosenFolder()
+                        } else {
+                            showFolderPicker = true
+                        }
                     } label: {
-                        Label("export_progress_save_icloud" as LocalizedStringKey, systemImage: "icloud.and.arrow.up")
-                            .frame(maxWidth: .infinity)
+                        Label(
+                            fileStorageService.savedFolderName.map {
+                                LocalizedStringKey("Save to \($0)")
+                            } ?? ("export_progress_save_to_folder" as LocalizedStringKey),
+                            systemImage: "folder"
+                        )
+                        .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(.bordered)
                     .controlSize(.large)
@@ -146,15 +162,14 @@ struct ExportProgressView: View {
 
     // MARK: - Actions
 
-    private func saveToiCloud() {
+    private func saveToChosenFolder() {
         guard let url = exportResult?.fileURL else { return }
-        Task {
-            do {
-                try await fileStorageService.copyToiCloud(fileURL: url)
-                iCloudSaveMessage = "File saved to iCloud Drive / Wellington Exports"
-            } catch {
-                iCloudSaveMessage = "Failed to save: \(error.localizedDescription)"
-            }
+        do {
+            try fileStorageService.copyToChosenFolder(fileURL: url)
+            let folderName = fileStorageService.savedFolderName ?? "folder"
+            iCloudSaveMessage = "Saved to \(folderName)"
+        } catch {
+            iCloudSaveMessage = "Failed to save: \(error.localizedDescription)"
         }
     }
 }

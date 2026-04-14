@@ -102,6 +102,28 @@
         }
       }
     },
+    "category_basal_energy" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resting Energy"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energía en reposo"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Энергия покоя"
+          }
+        }
+      }
+    },
     "category_blood_pressure_diastolic" : {
       "localizations" : {
         "en" : {
@@ -168,6 +190,72 @@
         }
       }
     },
+    "category_body_fat" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Body Fat Percentage"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Porcentaje de grasa corporal"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Процент жира"
+          }
+        }
+      }
+    },
+    "category_height" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Height"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altura"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рост"
+          }
+        }
+      }
+    },
+    "category_bmi" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Body Mass Index"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Índice de masa corporal"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Индекс массы тела"
+          }
+        }
+      }
+    },
     "category_dietary_energy" : {
       "localizations" : {
         "en" : {
@@ -186,6 +274,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Калории из пищи"
+          }
+        }
+      }
+    },
+    "category_dietary_water" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Water"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agua"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вода"
           }
         }
       }
@@ -322,6 +432,28 @@
         }
       }
     },
+    "category_flights_climbed" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flights Climbed"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pisos subidos"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этажи"
+          }
+        }
+      }
+    },
     "category_heart_rate" : {
       "localizations" : {
         "en" : {
@@ -340,6 +472,50 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пульс"
+          }
+        }
+      }
+    },
+    "category_hrv" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heart Rate Variability"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Variabilidad cardíaca"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вариабельность пульса (HRV)"
+          }
+        }
+      }
+    },
+    "category_vo2max" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio Fitness (VO₂ max)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fitness cardio (VO₂ máx)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кардио-фитнес (VO₂ max)"
           }
         }
       }
@@ -1366,6 +1542,9 @@
         }
       }
     },
+    "iCloud" : {
+
+    },
     "ok" : {
       "localizations" : {
         "en" : {
@@ -1387,6 +1566,9 @@
           }
         }
       }
+    },
+    "OK" : {
+
     },
     "onboarding_feature_export" : {
       "extractionState" : "stale",

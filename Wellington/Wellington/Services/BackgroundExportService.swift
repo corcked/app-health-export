@@ -110,8 +110,12 @@ final class BackgroundExportService {
                 format: format,
                 dateRange: dateRange
             )
+
+            // Save to iCloud Drive
+            try await fileStorageService.copyToiCloud(fileURL: result.fileURL)
+
             lastExportDate = Date()
-            logger.info("Background export completed: \(result.recordCount) records")
+            logger.info("Background export completed: \(result.recordCount) records, saved to iCloud")
             return true
         } catch {
             logger.error("Background export failed: \(error.localizedDescription)")

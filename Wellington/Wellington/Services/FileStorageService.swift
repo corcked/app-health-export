@@ -12,10 +12,14 @@ final class FileStorageService {
         return tempURL
     }
 
-    func copyToiCloud(fileURL: URL) throws {
-        guard let containerURL = FileManager.default.url(
-            forUbiquityContainerIdentifier: AppConstants.iCloud.containerIdentifier
-        ) else {
+    func copyToiCloud(fileURL: URL) async throws {
+        let containerURL: URL? = await Task.detached {
+            FileManager.default.url(
+                forUbiquityContainerIdentifier: AppConstants.iCloud.containerIdentifier
+            )
+        }.value
+
+        guard let containerURL else {
             throw WellingtonError.iCloudUnavailable
         }
 

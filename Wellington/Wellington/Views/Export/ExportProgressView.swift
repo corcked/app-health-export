@@ -148,11 +148,13 @@ struct ExportProgressView: View {
 
     private func saveToiCloud() {
         guard let url = exportResult?.fileURL else { return }
-        do {
-            try fileStorageService.copyToiCloud(fileURL: url)
-            iCloudSaveMessage = "File saved to iCloud Drive / Wellington Exports"
-        } catch {
-            iCloudSaveMessage = "Failed to save: \(error.localizedDescription)"
+        Task {
+            do {
+                try await fileStorageService.copyToiCloud(fileURL: url)
+                iCloudSaveMessage = "File saved to iCloud Drive / Wellington Exports"
+            } catch {
+                iCloudSaveMessage = "Failed to save: \(error.localizedDescription)"
+            }
         }
     }
 }

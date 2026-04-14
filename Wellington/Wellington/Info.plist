@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>processing</string>
+	</array>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.wellington.export.background</string>
+	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Wellington needs access to your health data to export it for your personal analysis.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Wellington does not write any data to Health. This permission is required by the system but will not be used.</string>
+</dict>
+</plist>

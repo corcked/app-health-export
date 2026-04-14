@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A100000001 /* WellingtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000001; };
+		A100000002 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000002; };
+		A100000003 /* HealthDataCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000003; };
+		A100000004 /* ExportFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000004; };
+		A100000005 /* ExportSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000005; };
+		A100000006 /* HealthRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000006; };
+		A100000007 /* ExportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000007; };
+		A100000008 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000008; };
+		A100000009 /* WellingtonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000009; };
+		A100000010 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000010; };
+		A100000011 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000011; };
+		A100000012 /* FormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000012; };
+		A100000013 /* FileStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000013; };
+		A100000014 /* BackgroundExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000014; };
+		A100000015 /* StoreKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000015; };
+		A100000016 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000016; };
+		A100000017 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000017; };
+		A100000018 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000018; };
+		A100000019 /* ExportProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000019; };
+		A100000020 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000020; };
+		A100000021 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000021; };
+		A100000022 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000022; };
+		A100000023 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000023; };
+		A100000024 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000024; };
+		A100000025 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000025; };
+		A100000026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B100000026; };
+		A100000027 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B100000027; };
+		A100000028 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B100000029; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B100000001 /* WellingtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellingtonApp.swift; sourceTree = "<group>"; };
+		B100000002 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		B100000003 /* HealthDataCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataCategory.swift; sourceTree = "<group>"; };
+		B100000004 /* ExportFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportFormat.swift; sourceTree = "<group>"; };
+		B100000005 /* ExportSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSchedule.swift; sourceTree = "<group>"; };
+		B100000006 /* HealthRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecord.swift; sourceTree = "<group>"; };
+		B100000007 /* ExportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportResult.swift; sourceTree = "<group>"; };
+		B100000008 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
+		B100000009 /* WellingtonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellingtonError.swift; sourceTree = "<group>"; };
+		B100000010 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		B100000011 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		B100000012 /* FormatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatService.swift; sourceTree = "<group>"; };
+		B100000013 /* FileStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageService.swift; sourceTree = "<group>"; };
+		B100000014 /* BackgroundExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundExportService.swift; sourceTree = "<group>"; };
+		B100000015 /* StoreKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitService.swift; sourceTree = "<group>"; };
+		B100000016 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B100000017 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		B100000018 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		B100000019 /* ExportProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportProgressView.swift; sourceTree = "<group>"; };
+		B100000020 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		B100000021 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B100000022 /* TipJarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarView.swift; sourceTree = "<group>"; };
+		B100000023 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
+		B100000024 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B100000025 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		B100000026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B100000027 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		B100000028 /* Wellington.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wellington.entitlements; sourceTree = "<group>"; };
+		B100000029 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C100000001 /* Wellington.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wellington.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E100000001 = {
+			isa = PBXGroup;
+			children = (
+				E100000002 /* Wellington */,
+				E100000099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E100000099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C100000001 /* Wellington.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E100000002 /* Wellington */ = {
+			isa = PBXGroup;
+			children = (
+				E100000003 /* App */,
+				E100000004 /* Models */,
+				E100000005 /* Services */,
+				E100000007 /* Views */,
+				E100000006 /* Extensions */,
+				E100000013 /* Resources */,
+				B100000028 /* Wellington.entitlements */,
+			);
+			path = Wellington;
+			sourceTree = "<group>";
+		};
+		E100000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B100000001 /* WellingtonApp.swift */,
+				B100000002 /* AppConstants.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E100000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B100000003 /* HealthDataCategory.swift */,
+				B100000004 /* ExportFormat.swift */,
+				B100000005 /* ExportSchedule.swift */,
+				B100000006 /* HealthRecord.swift */,
+				B100000007 /* ExportResult.swift */,
+				B100000008 /* DateRange.swift */,
+				B100000009 /* WellingtonError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E100000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B100000010 /* HealthKitService.swift */,
+				B100000011 /* ExportService.swift */,
+				B100000012 /* FormatService.swift */,
+				B100000013 /* FileStorageService.swift */,
+				B100000014 /* BackgroundExportService.swift */,
+				B100000015 /* StoreKitService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E100000006 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B100000025 /* Date+Formatting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E100000007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B100000016 /* MainTabView.swift */,
+				E100000008 /* Export */,
+				E100000009 /* Schedule */,
+				E100000010 /* Settings */,
+				E100000011 /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E100000008 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				B100000017 /* ExportView.swift */,
+				B100000018 /* CategoryListView.swift */,
+				B100000019 /* ExportProgressView.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		E100000009 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				B100000020 /* ScheduleView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		E100000010 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B100000021 /* SettingsView.swift */,
+				B100000022 /* TipJarView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E100000011 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B100000023 /* ShareSheetView.swift */,
+				B100000024 /* OnboardingView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E100000013 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B100000026 /* Assets.xcassets */,
+				B100000027 /* Products.storekit */,
+				B100000029 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F100000001 /* Wellington */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F200000003 /* Build configuration list for PBXNativeTarget "Wellington" */;
+			buildPhases = (
+				F100000002 /* Sources */,
+				D100000001 /* Frameworks */,
+				F100000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wellington;
+			productName = Wellington;
+			productReference = C100000001 /* Wellington.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F100000099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F100000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F200000001 /* Build configuration list for PBXProject "Wellington" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+				es,
+			);
+			mainGroup = E100000001;
+			productRefGroup = E100000099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F100000001 /* Wellington */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F100000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000026 /* Assets.xcassets in Resources */,
+				A100000027 /* Products.storekit in Resources */,
+				A100000028 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F100000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000001 /* WellingtonApp.swift in Sources */,
+				A100000002 /* AppConstants.swift in Sources */,
+				A100000003 /* HealthDataCategory.swift in Sources */,
+				A100000004 /* ExportFormat.swift in Sources */,
+				A100000005 /* ExportSchedule.swift in Sources */,
+				A100000006 /* HealthRecord.swift in Sources */,
+				A100000007 /* ExportResult.swift in Sources */,
+				A100000008 /* DateRange.swift in Sources */,
+				A100000009 /* WellingtonError.swift in Sources */,
+				A100000010 /* HealthKitService.swift in Sources */,
+				A100000011 /* ExportService.swift in Sources */,
+				A100000012 /* FormatService.swift in Sources */,
+				A100000013 /* FileStorageService.swift in Sources */,
+				A100000014 /* BackgroundExportService.swift in Sources */,
+				A100000015 /* StoreKitService.swift in Sources */,
+				A100000016 /* MainTabView.swift in Sources */,
+				A100000017 /* ExportView.swift in Sources */,
+				A100000018 /* CategoryListView.swift in Sources */,
+				A100000019 /* ExportProgressView.swift in Sources */,
+				A100000020 /* ScheduleView.swift in Sources */,
+				A100000021 /* SettingsView.swift in Sources */,
+				A100000022 /* TipJarView.swift in Sources */,
+				A100000023 /* ShareSheetView.swift in Sources */,
+				A100000024 /* OnboardingView.swift in Sources */,
+				A100000025 /* Date+Formatting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F200000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F200000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F200000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wellington/Wellington.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VU3ZBTK8XM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wellington;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Wellington needs access to your health data to export it for your personal analysis.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers = "com.wellington.export.background";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wellington.healthexport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F200000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wellington/Wellington.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VU3ZBTK8XM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wellington;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Wellington needs access to your health data to export it for your personal analysis.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers = "com.wellington.export.background";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wellington.healthexport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F200000001 /* Build configuration list for PBXProject "Wellington" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F200000011 /* Debug */,
+				F200000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F200000003 /* Build configuration list for PBXNativeTarget "Wellington" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F200000021 /* Debug */,
+				F200000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = F100000099 /* Project object */;
+}

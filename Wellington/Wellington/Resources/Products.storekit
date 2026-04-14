@@ -1,0 +1,94 @@
+{
+  "identifier" : "A1B2C3D4",
+  "nonRenewableSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "tip_small_001",
+      "localizations" : [
+        {
+          "description" : "Buy me a small coffee",
+          "displayName" : "Small Coffee",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Купить маленький кофе",
+          "displayName" : "Маленький кофе",
+          "locale" : "ru"
+        },
+        {
+          "description" : "Comprar un café pequeño",
+          "displayName" : "Café pequeño",
+          "locale" : "es"
+        }
+      ],
+      "productID" : "wellington.tip.small",
+      "referenceName" : "Small Coffee Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "tip_medium_001",
+      "localizations" : [
+        {
+          "description" : "Buy me a medium coffee",
+          "displayName" : "Medium Coffee",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Купить средний кофе",
+          "displayName" : "Средний кофе",
+          "locale" : "ru"
+        },
+        {
+          "description" : "Comprar un café mediano",
+          "displayName" : "Café mediano",
+          "locale" : "es"
+        }
+      ],
+      "productID" : "wellington.tip.medium",
+      "referenceName" : "Medium Coffee Tip",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "tip_large_001",
+      "localizations" : [
+        {
+          "description" : "Buy me a large coffee",
+          "displayName" : "Large Coffee",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Купить большой кофе",
+          "displayName" : "Большой кофе",
+          "locale" : "ru"
+        },
+        {
+          "description" : "Comprar un café grande",
+          "displayName" : "Café grande",
+          "locale" : "es"
+        }
+      ],
+      "productID" : "wellington.tip.large",
+      "referenceName" : "Large Coffee Tip",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "wellington_001",
+    "_developerTeamID" : "TEAM_ID"
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

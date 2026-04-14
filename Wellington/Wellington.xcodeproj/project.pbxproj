@@ -31,11 +31,11 @@
 		A100000022 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000022 /* TipJarView.swift */; };
 		A100000023 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000023 /* ShareSheetView.swift */; };
 		A100000024 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000024 /* OnboardingView.swift */; };
-		A100000030 /* FolderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000030 /* FolderPickerView.swift */; };
 		A100000025 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000025 /* Date+Formatting.swift */; };
 		A100000026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B100000026 /* Assets.xcassets */; };
 		A100000027 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B100000027 /* Products.storekit */; };
 		A100000028 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B100000029 /* Localizable.xcstrings */; };
+		A100000030 /* FolderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000030 /* FolderPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,12 +64,12 @@
 		B100000022 /* TipJarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarView.swift; sourceTree = "<group>"; };
 		B100000023 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
 		B100000024 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		B100000030 /* FolderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPickerView.swift; sourceTree = "<group>"; };
 		B100000025 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
 		B100000026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B100000027 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
 		B100000028 /* Wellington.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wellington.entitlements; sourceTree = "<group>"; };
 		B100000029 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B100000030 /* FolderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPickerView.swift; sourceTree = "<group>"; };
 		C100000001 /* Wellington.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wellington.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -447,7 +447,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Wellington/Wellington.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = VU3ZBTK8XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -481,7 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Wellington/Wellington.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = VU3ZBTK8XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

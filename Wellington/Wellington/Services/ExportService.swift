@@ -84,7 +84,7 @@ final class ExportService {
         // 5. Optionally copy to iCloud
         if UserDefaults.standard.bool(forKey: AppConstants.UserDefaultsKeys.autoSaveToiCloud) {
             do {
-                try fileStorageService.copyToiCloud(fileURL: fileURL)
+                try await fileStorageService.copyToiCloud(fileURL: fileURL)
             } catch {
                 logger.warning("iCloud copy failed: \(error.localizedDescription)")
                 // Don't fail the whole export if iCloud copy fails

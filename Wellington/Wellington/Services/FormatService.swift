@@ -287,18 +287,26 @@ struct MarkdownFormatService: FormatService {
         switch category {
         case .steps: return "Steps"
         case .activeEnergy: return "Active Energy"
+        case .basalEnergy: return "Resting Energy"
         case .distanceWalking: return "Distance"
+        case .flightsClimbed: return "Flights Climbed"
         case .heartRate: return "Heart Rate"
         case .restingHeartRate: return "Resting Heart Rate"
+        case .heartRateVariability: return "Heart Rate Variability"
+        case .vo2Max: return "Cardio Fitness (VO₂ max)"
         case .oxygenSaturation: return "Oxygen Saturation"
         case .respiratoryRate: return "Respiratory Rate"
         case .bloodPressureSystolic: return "Blood Pressure (Systolic)"
         case .bloodPressureDiastolic: return "Blood Pressure (Diastolic)"
         case .bodyTemperature: return "Body Temperature"
         case .weight: return "Weight"
+        case .bodyFatPercentage: return "Body Fat Percentage"
+        case .height: return "Height"
+        case .bodyMassIndex: return "Body Mass Index"
         case .sleepAnalysis: return "Sleep"
         case .workouts: return "Workouts"
         case .dietaryEnergy: return "Dietary Energy"
+        case .dietaryWater: return "Water"
         }
     }
 }

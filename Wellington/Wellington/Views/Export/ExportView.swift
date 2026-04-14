@@ -10,7 +10,6 @@ struct ExportView: View {
     @State private var customStartDate: Date = Calendar.current.date(byAdding: .day, value: -30, to: Date()) ?? Date()
     @State private var customEndDate: Date = Date()
     @State private var exportResult: ExportResult?
-    @State private var showShareSheet: Bool = false
     @State private var errorMessage: String?
 
     private var canExport: Bool {
@@ -28,18 +27,10 @@ struct ExportView: View {
         .sheet(item: $exportResult) { result in
             ExportProgressView(
                 exportResult: result,
-                onShare: {
-                    showShareSheet = true
-                },
                 onDismiss: {
                     exportResult = nil
                 }
             )
-        }
-        .sheet(isPresented: $showShareSheet) {
-            if let result = exportResult {
-                ShareSheetView(items: [result.fileURL])
-            }
         }
         .alert(
             "error" as LocalizedStringKey,

@@ -2,10 +2,13 @@ import SwiftUI
 
 struct ExportProgressView: View {
     let exportResult: ExportResult?
-    var onShare: () -> Void
     var onDismiss: () -> Void
 
     @AppStorage(AppConstants.UserDefaultsKeys.autoSaveToiCloud) private var autoSaveToiCloud = false
+    @State private var showShareSheet = false
+    @State private var iCloudSaveMessage: String?
+
+    private let fileStorageService = FileStorageService()
 
     private var fileSize: String? {
         guard let url = exportResult?.fileURL,
@@ -35,6 +38,21 @@ struct ExportProgressView: View {
                     Button("done" as LocalizedStringKey) {
                         onDismiss()
                     }
+                }
+            }
+            .sheet(isPresented: $showShareSheet) {
+                if let url = exportResult?.fileURL {
+                    ShareSheetView(items: [url])
+                }
+            }
+            .alert("iCloud", isPresented: .init(
+                get: { iCloudSaveMessage != nil },
+                set: { if !$0 { iCloudSaveMessage = nil } }
+            )) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                if let msg = iCloudSaveMessage {
+                    Text(msg)
                 }
             }
         }
@@ -92,7 +110,7 @@ struct ExportProgressView: View {
 
             VStack(spacing: 12) {
                 Button {
-                    onShare()
+                    showShareSheet = true
                 } label: {
                     Label("export_progress_share" as LocalizedStringKey, systemImage: "square.and.arrow.up")
                         .frame(maxWidth: .infinity)
@@ -129,7 +147,13 @@ struct ExportProgressView: View {
     // MARK: - Actions
 
     private func saveToiCloud() {
-        // iCloud save logic will be integrated with FileStorageService
+        guard let url = exportResult?.fileURL else { return }
+        do {
+            try fileStorageService.copyToiCloud(fileURL: url)
+            iCloudSaveMessage = "File saved to iCloud Drive / Wellington Exports"
+        } catch {
+            iCloudSaveMessage = "Failed to save: \(error.localizedDescription)"
+        }
     }
 }
 
@@ -142,7 +166,6 @@ struct ExportProgressView: View {
             categories: [.steps, .heartRate],
             dateRange: DateRange.from(mode: .last30Days)
         ),
-        onShare: {},
         onDismiss: {}
     )
 }
@@ -150,7 +173,6 @@ struct ExportProgressView: View {
 #Preview("Exporting") {
     ExportProgressView(
         exportResult: nil,
-        onShare: {},
         onDismiss: {}
     )
 }

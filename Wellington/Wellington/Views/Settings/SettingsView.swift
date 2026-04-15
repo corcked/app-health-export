@@ -4,6 +4,7 @@ struct SettingsView: View {
     @Environment(HealthKitService.self) private var healthKitService
 
     @AppStorage(AppConstants.UserDefaultsKeys.autoSaveToiCloud) private var autoSaveToiCloud = false
+    @AppStorage(AppConstants.UserDefaultsKeys.overwriteExportFile) private var overwriteExportFile = false
     @State private var showFolderPicker = false
     @State private var savedFolderName: String?
 
@@ -68,10 +69,15 @@ struct SettingsView: View {
             }
 
             Toggle("settings_auto_save_icloud" as LocalizedStringKey, isOn: $autoSaveToiCloud)
+
+            Toggle("settings_overwrite_file" as LocalizedStringKey, isOn: $overwriteExportFile)
         } header: {
             Text("settings_section_export" as LocalizedStringKey)
         } footer: {
-            Text("settings_export_footer" as LocalizedStringKey)
+            Text(overwriteExportFile
+                ? ("settings_overwrite_footer_on" as LocalizedStringKey)
+                : ("settings_overwrite_footer_off" as LocalizedStringKey)
+            )
         }
     }
 

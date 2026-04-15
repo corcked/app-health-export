@@ -168,24 +168,24 @@
         }
       }
     },
-    "category_body_temperature" : {
+    "category_bmi" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Body Temperature"
+            "value" : "Body Mass Index"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temperatura corporal"
+            "value" : "Índice de masa corporal"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Температура тела"
+            "value" : "Индекс массы тела"
           }
         }
       }
@@ -212,46 +212,24 @@
         }
       }
     },
-    "category_height" : {
+    "category_body_temperature" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Height"
+            "value" : "Body Temperature"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Altura"
+            "value" : "Temperatura corporal"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Рост"
-          }
-        }
-      }
-    },
-    "category_bmi" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Body Mass Index"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Índice de masa corporal"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Индекс массы тела"
+            "value" : "Температура тела"
           }
         }
       }
@@ -318,6 +296,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дистанция ходьбы и бега"
+          }
+        }
+      }
+    },
+    "category_flights_climbed" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flights Climbed"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pisos subidos"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этажи"
           }
         }
       }
@@ -432,28 +432,6 @@
         }
       }
     },
-    "category_flights_climbed" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Flights Climbed"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pisos subidos"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Этажи"
-          }
-        }
-      }
-    },
     "category_heart_rate" : {
       "localizations" : {
         "en" : {
@@ -476,6 +454,28 @@
         }
       }
     },
+    "category_height" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Height"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altura"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рост"
+          }
+        }
+      }
+    },
     "category_hrv" : {
       "localizations" : {
         "en" : {
@@ -494,28 +494,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вариабельность пульса (HRV)"
-          }
-        }
-      }
-    },
-    "category_vo2max" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cardio Fitness (VO₂ max)"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fitness cardio (VO₂ máx)"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Кардио-фитнес (VO₂ max)"
           }
         }
       }
@@ -630,6 +608,28 @@
         }
       }
     },
+    "category_vo2max" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cardio Fitness (VO₂ max)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fitness cardio (VO₂ máx)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кардио-фитнес (VO₂ max)"
+          }
+        }
+      }
+    },
     "category_weight" : {
       "localizations" : {
         "en" : {
@@ -692,6 +692,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Год"
+          }
+        }
+      }
+    },
+    "date_range_1d" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last 24 Hours"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Últimas 24 horas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последние 24 часа"
           }
         }
       }
@@ -1454,6 +1476,7 @@
       }
     },
     "export_progress_save_icloud" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1471,6 +1494,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сохранить в iCloud"
+          }
+        }
+      }
+    },
+    "export_progress_save_to_folder" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save to Folder…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar en carpeta…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранить в папку…"
           }
         }
       }
@@ -1950,6 +1995,9 @@
         }
       }
     },
+    "Save to %@" : {
+
+    },
     "save_to_icloud" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -2127,6 +2175,116 @@
         }
       }
     },
+    "schedule_preferred_time" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preferred Time"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hora preferida"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предпочтительное время"
+          }
+        }
+      }
+    },
+    "schedule_time_footer" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS will try to run the export around this time, but the exact time is not guaranteed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS intentará ejecutar la exportación alrededor de esta hora, pero la hora exacta no está garantizada."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS постарается запустить экспорт примерно в это время, но точное время не гарантируется."
+          }
+        }
+      }
+    },
+    "schedule_section_logs" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Export History"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historial de exportaciones"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "История экспорта"
+          }
+        }
+      }
+    },
+    "schedule_logs_footer %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total: %lld exports"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total: %lld exportaciones"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всего: %lld экспортов"
+          }
+        }
+      }
+    },
+    "schedule_load_more" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Load More"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargar más"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузить ещё"
+          }
+        }
+      }
+    },
     "schedule_title" : {
       "localizations" : {
         "en" : {
@@ -2239,6 +2397,50 @@
         }
       }
     },
+    "settings_choose_folder" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Export Folder"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carpeta de exportación"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Папка экспорта"
+          }
+        }
+      }
+    },
+    "settings_clear_folder" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear Folder"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar carpeta"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбросить папку"
+          }
+        }
+      }
+    },
     "settings_developer" : {
       "localizations" : {
         "en" : {
@@ -2257,6 +2459,94 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Разработчик"
+          }
+        }
+      }
+    },
+    "settings_export_footer" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a folder where exports are saved. Works with Obsidian vaults and any folder in Files."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleccione una carpeta donde se guardan las exportaciones. Funciona con bóvedas de Obsidian y cualquier carpeta en Archivos."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите папку для сохранения экспорта. Работает с хранилищами Obsidian и любой папкой в Файлах."
+          }
+        }
+      }
+    },
+    "settings_overwrite_file" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overwrite Previous Export"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobrescribir exportación anterior"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перезаписывать предыдущий файл"
+          }
+        }
+      }
+    },
+    "settings_overwrite_footer_on" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each export overwrites the previous file. Good for automation — always one up-to-date file."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada exportación sobrescribe el archivo anterior. Ideal para automatización."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый экспорт перезаписывает предыдущий файл. Удобно для автоматизации — всегда один актуальный файл."
+          }
+        }
+      }
+    },
+    "settings_overwrite_footer_off" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each export creates a new file with dates in the name. Good for keeping daily history."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada exportación crea un nuevo archivo con fechas en el nombre. Ideal para mantener historial diario."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый экспорт создаёт новый файл с датами в имени. Удобно для хранения истории по дням."
           }
         }
       }
@@ -2330,6 +2620,7 @@
       }
     },
     "settings_icloud_footer" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2347,28 +2638,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Автоматически сохранять экспортированные файлы в iCloud Drive."
-          }
-        }
-      }
-    },
-    "settings_choose_folder" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Export Folder"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Carpeta de exportación"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Папка экспорта"
           }
         }
       }
@@ -2391,94 +2660,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не выбрана"
-          }
-        }
-      }
-    },
-    "settings_clear_folder" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Clear Folder"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Borrar carpeta"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сбросить папку"
-          }
-        }
-      }
-    },
-    "settings_section_export" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Export"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Exportación"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Экспорт"
-          }
-        }
-      }
-    },
-    "settings_export_footer" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose a folder where exports are saved. Works with Obsidian vaults and any folder in Files."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seleccione una carpeta donde se guardan las exportaciones. Funciona con bóvedas de Obsidian y cualquier carpeta en Archivos."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Выберите папку для сохранения экспорта. Работает с хранилищами Obsidian и любой папкой в Файлах."
-          }
-        }
-      }
-    },
-    "export_progress_save_to_folder" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Save to Folder…"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guardar en carpeta…"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сохранить в папку…"
           }
         }
       }
@@ -2527,6 +2708,28 @@
         }
       }
     },
+    "settings_section_export" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Export"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exportación"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экспорт"
+          }
+        }
+      }
+    },
     "settings_section_healthkit" : {
       "localizations" : {
         "en" : {
@@ -2550,6 +2753,7 @@
       }
     },
     "settings_section_icloud" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

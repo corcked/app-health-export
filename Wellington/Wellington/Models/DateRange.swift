@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 
 enum DateRangeMode: String, CaseIterable, Identifiable, Codable {
+    case lastDay = "1d"
     case last7Days = "7d"
     case last30Days = "30d"
     case last90Days = "90d"
@@ -13,6 +14,7 @@ enum DateRangeMode: String, CaseIterable, Identifiable, Codable {
 
     var displayName: LocalizedStringKey {
         switch self {
+        case .lastDay: "date_range_1d"
         case .last7Days: "date_range_7d"
         case .last30Days: "date_range_30d"
         case .last90Days: "date_range_90d"
@@ -32,6 +34,11 @@ struct DateRange {
         let calendar = Calendar.current
 
         switch mode {
+        case .lastDay:
+            return DateRange(
+                startDate: calendar.date(byAdding: .day, value: -1, to: now)!,
+                endDate: now
+            )
         case .last7Days:
             return DateRange(
                 startDate: calendar.date(byAdding: .day, value: -7, to: now)!,

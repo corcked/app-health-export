@@ -122,6 +122,10 @@ final class FileStorageService {
     }
 
     func generateFilename(format: ExportFormat, dateRange: DateRange) -> String {
+        let overwrite = UserDefaults.standard.bool(forKey: AppConstants.UserDefaultsKeys.overwriteExportFile)
+        if overwrite {
+            return "wellington-export.\(format.fileExtension)"
+        }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let start = dateFormatter.string(from: dateRange.startDate)

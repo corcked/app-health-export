@@ -29,5 +29,8 @@ enum AppConstants {
         static let exportDateRangeMode = "exportDateRangeMode"
         static let hasCompletedOnboarding = "hasCompletedOnboarding"
         static let lastBackgroundExportDate = "lastBackgroundExportDate"
+        static let overwriteExportFile = "overwriteExportFile"
+        static let preferredExportHour = "preferredExportHour"
+        static let exportLogs = "exportLogs"
     }
 }

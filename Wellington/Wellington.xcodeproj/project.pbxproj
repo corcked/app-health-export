@@ -16,6 +16,7 @@
 		A100000007 /* ExportResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000007 /* ExportResult.swift */; };
 		A100000008 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000008 /* DateRange.swift */; };
 		A100000009 /* WellingtonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000009 /* WellingtonError.swift */; };
+		A100000031 /* ExportLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000031 /* ExportLog.swift */; };
 		A100000010 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000010 /* HealthKitService.swift */; };
 		A100000011 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000011 /* ExportService.swift */; };
 		A100000012 /* FormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000012 /* FormatService.swift */; };
@@ -49,6 +50,7 @@
 		B100000007 /* ExportResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportResult.swift; sourceTree = "<group>"; };
 		B100000008 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
 		B100000009 /* WellingtonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellingtonError.swift; sourceTree = "<group>"; };
+		B100000031 /* ExportLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportLog.swift; sourceTree = "<group>"; };
 		B100000010 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		B100000011 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
 		B100000012 /* FormatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatService.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				B100000007 /* ExportResult.swift */,
 				B100000008 /* DateRange.swift */,
 				B100000009 /* WellingtonError.swift */,
+				B100000031 /* ExportLog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				A100000007 /* ExportResult.swift in Sources */,
 				A100000008 /* DateRange.swift in Sources */,
 				A100000009 /* WellingtonError.swift in Sources */,
+				A100000031 /* ExportLog.swift in Sources */,
 				A100000010 /* HealthKitService.swift in Sources */,
 				A100000011 /* ExportService.swift in Sources */,
 				A100000012 /* FormatService.swift in Sources */,
@@ -447,7 +451,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Wellington/Wellington.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = VU3ZBTK8XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -481,7 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Wellington/Wellington.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = VU3ZBTK8XM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
